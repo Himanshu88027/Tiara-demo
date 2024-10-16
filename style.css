@@ -70,7 +70,15 @@ header {
     transition: all 0.3s ease;
 }
 
-.menu-item > a:hover {
+.menu-item > span {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.menu-item > a:hover,
+.menu-item > span:hover {
     color: #e28aff;
     text-decoration: none;
 }
@@ -144,7 +152,8 @@ header {
         height: auto;
     }
 
-    .menu-item > a {
+    .menu-item > a,
+    .menu-item > span {
         color: rgb(0, 0, 0);
         font-size: 1rem;
         font-family: "Poppins", sans-serif;
@@ -197,15 +206,14 @@ header {
         color: #e28aff;
     }
 
-    .menu-item.has-submenu > a::after {
-        content: '\2193';
-        /* content: '\25BC'; */
+    .menu-item.has-submenu > span::after {
+        content: '\25BC';
         margin-left: 0.5rem;
         font-size: 0.7rem;
     }
 
-    .menu-item.has-submenu > a.active::after {
-        content: '\2191';
+    .menu-item.has-submenu > span.active::after {
+        content: '\25B2';
     }
 }
 
@@ -416,11 +424,6 @@ header {
 }
 
 
-.slick-prev:before, .slick-next:before {
-    color: #200174 !important;
-    font-size: 25px !important;
-}
-
 .slick-slide img {
     border-radius: 30px;
     object-fit: cover;
@@ -519,8 +522,13 @@ header {
     gap: 1rem;
 }
 
+.slick-prev {
+    left: -29px !important;
+}
+
 .slick-prev:before, .slick-next:before{
     color: black !important;
+    font-size: 25px !important;
 }
 /* Styles for small devices (e.g., max-width of 768px) */
 @media (max-width: 768px) {
@@ -563,6 +571,11 @@ header {
     .social-media {
         visibility: hidden;
     }
+
+    .slick-prev:before, .slick-next:before {
+        visibility: hidden;
+    }
+    
   }
 
   .social-media {
