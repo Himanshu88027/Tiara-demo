@@ -334,22 +334,23 @@ header {
     position: relative;
     display: inline-block;
     letter-spacing: 0.05rem;
-    font-weight: 700;
+    
     font-size: 17px;
     overflow: hidden;
     background: #200174;
     border: 1px solid black;
 }
    
-   .button-1 a {
+   .button-1 span {
     position: relative;
     z-index: 5;
+    font-weight: 700;
     transition: color 0.4s;
     color: black;
     text-decoration: none;
 }
    
-   .button-1:hover a {
+   .button-1:hover span {
     color: #C559EA;
     text-decoration: none;
 }
