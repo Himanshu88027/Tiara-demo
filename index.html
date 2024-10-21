@@ -1,385 +1,1172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
 
-    <title>Tiara</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Tiara</title>
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a href="/Tiara-demo/" id="logo" class="navbar-brand">
-                <img src="assets/logo.webp" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header" style="background-color: #947ae378;">
-                    <h5 class="offcanvas-title display-6" id="offcanvasNavbarLabel">The Tiara</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body justify-content-center">
-                    <nav id="main-nav">
-                        <ul id="main-menu">
-                            <li class="menu-item">
-                                <a href="/Tiara-demo/">Home</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Miss Universe India 2025 Grooming</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Miss Universe India 2025 Grooming</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">Upcoming Batches</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">International Pageant Training</a>
-                            </li>
-                            <li class="menu-item has-submenu">
-                                <span class="submenu-toggle">More</span>
-                                <ul class="sub-menu">
-                                    <li><a href="">Pageant Winners - India</a></li>
-                                    <li><a href="">Winners Femina Miss India</a></li>
-                                    <li><a href="">Winners Miss Diva</a></li>
-                                    <li><a href="">Winners Miss Teen Diva</a></li>
-                                    <li><a href="">Winner Glamanand Supermodel India</a></li>
-                                    <li><a href="">Winners Miss Charm India</a></li>
-                                    <li><a href="">Winners Divine Beauty</a></li>
-                                    <li><a href="/Tiara-demo/about.html">About Ritika Ramtri</a></li>
-                                    <li><a href="/Tiara-demo/contact.html">Contact</a></li>
-                                    <li><a href="">Blogs</a></li>
-                                    <li><a href="">Search Results</a></li>
-                                    <li><a href="">Members</a></li>
-                                    <li><a href="">Followers</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+	<!--==================================================-->
+	<!-- Start Header Area -->
+	<!--==================================================-->
+	<div class="header-area inner-style" id="sticky-header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-2">
+					<div class="header-logo">
+						<a href="index.html"><img class="w-50 p-2" src="assets/logo.webp" alt=""></a>
+					</div>
+				</div>
+				<div class="col-lg-10 col-xl-10">
+					<div class="header-menu">
+						<ul>
+							<li><a href="#">Home</a>
 
-    <div class="social-media">
-        <div class="social-icon">
-            <a href="#">
-                <img src="assets/insta.png" alt="">
-            </a>
-        </div>
-        <div class="social-icon">
-            <a href="#">
-                <img src="assets/facebook.png" alt="">
-            </a>
-        </div>
-        <div class="social-icon">
-            <a href="#">
-                <img src="assets/youtube.png" alt="">
-            </a>
-        </div>
-        <div class="social-icon">
-            <a href="#">
-                <img src="assets/linkedin.png" alt="">
-            </a>
-        </div>
-    </div>
-    <!-- section-1 -->
-    <section id="section-1">
-        <div class="section-1-heading">
-            <h1 class="text-uppercase">THE TIARA</h1>
-        </div>
-        <div class="section-1-para">
-            <h1 class="text-uppercase">TIARA PAGEANT AND MODEL TRAINING STUDIO</h1>
-        </div>
-        <div class="section-1-sub-para">
-            <h1>Founded in 1997, The Tiara Pageant and Model Training Studio in Pune, is your leading training center
-                for reputed beauty pageants. Our expertise lies in training for Miss India and all other national and
-                international pageants. Our pageant grooming techniques will help ace your ramp walk, master your
-                pageant interview and become photoshoot ready. Contact us today to start your journey towards the crown.
-            </h1>
-        </div>
-    </section>
+							</li>
+							<li><a href="about.html">About</a></li>
 
-    <!-- section-2 -->
-    <section id="section-2">
-        <div class="container-fluid text-center py-4">
-            <h1 id="pagent-stage-heading">Own the Pageant Stage</h1>
-            <p class="pagent-stage-para">Learn to command the stage with beauty, grace and confidence.</p>
-            <p class="pagent-stage-para">Get exclusive training from India's 1st pageant training coach, Ritika Ramtri.
-            </p>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div id="grooming">
-                        <div class="banner-img">
-                            <img src="assets/banner-4.jpg" alt="">
-                        </div>
-                        <a href="#"><button class="button-1"><span>Miss India 2025 Grooming</span></button></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div id="upcoming">
-                        <div class="banner-img">
-                            <img src="assets/banner-2.webp" alt="">
-                        </div>
-                        <a href="#"><button class="button-1"><span>Upcoming Batches</span></button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+							<li class="menu-item-has-children"><a href="#">Blogs</a></li>
+							<li><a href="contact.html">Contact</a></li>
 
-    <!-- section-3 -->
-    <section id="section-3">
-        <div class="container-fluid my-5">
-            <div class="main-section">
-                <div class="section-content">
-                    <h2 class="mb-4 display-3">About Us</h2>
-                    <div class="row">
-                        <div class="col-lg-6 order-2 order-lg-1 mb-4">
-                            <h3>Our Mission</h3>
-                            <p>Miss Universe 2024 is dedicated to empowering women from all walks of life, celebrating
-                                diversity, and promoting positive change in the world. We believe in the power of beauty
-                                combined with intelligence and compassion to inspire and make a difference.</p>
-                            <p>Our pageant provides a global platform for ambitious women to showcase their talents,
-                                share their stories, and advocate for causes close to their hearts.</p>
-                            <a href="/Tiara-demo/about.html">
-                                <button class="button-1 button-2 mt-5">
-                                    <span>Read More</span>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 order-1 order-lg-2 mb-4 overflow-hidden">
-                            <img src="assets/banner-5.jpg" alt="Miss Universe Contestants" class="img-fluid">
-                        </div>
-                    </div>
+							<li class="menu-item-has-children"><a href="#">More<i class="bi bi-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="about.html">About</a></li>
+									<li><a href="service.html">Service</a></li>
+									<li><a href="service-details.html">Service Details</a></li>
+									<li><a href="portfolio.html">Portfolio</a></li>
+									<li><a href="portfolio-details.html">Portfolio Details</a></li>
+									<li><a href="team.html">Team</a></li>
+									<li><a href="pricing.html">Pricing</a></li>
+									<li><a href="faqs.html">Faqs</a></li>
+								</ul>
+							</li>
 
-                    <h3 class="mb-3">Our Values</h3>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="value-card">
-                                <h4><i class="bi bi-star-fill text-warning"></i> Excellence</h4>
-                                <p>We strive for excellence in all aspects of our competition and organization.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="value-card">
-                                <h4><i class="bi bi-globe2 text-primary"></i> Diversity</h4>
-                                <p>We celebrate the rich diversity of cultures, backgrounds, and perspectives.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="value-card">
-                                <h4><i class="bi bi-heart-fill text-danger"></i> Empowerment</h4>
-                                <p>We empower women to reach their full potential and make a positive impact.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="value-card">
-                                <h4><i class="bi bi-lightbulb-fill text-success"></i> Innovation</h4>
-                                <p>We embrace innovation and fresh ideas to evolve and stay relevant.</p>
-                            </div>
-                        </div>
-                    </div>
+						</ul>
+						<div class="header-button">
+							<a href="contact.html">Get Appoinment<i class="bi bi-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--==================================================-->
+	<!-- End Header Area -->
+	<!--==================================================-->
 
-                    <h2 class="mb-4 mt-5 display-3">News & Media</h2>
-                    <h3 class="mb-4">Latest News</h3>
-                    <div class="container mt-5">
-                        <h2 class="mb-4">Featured Cards</h2>
-                        <div class="card-carousel">
-                            <div class="card mx-2">
-                                <img src="assets/banner-3-2.jpg" class="card-img-top" alt="Card 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card 1</h5>
-                                    <p class="card-text">Some quick example text for Card 1.</p>
-                                    <a href="#" class="read-more-btn">Read more</a>
-                                </div>
-                            </div>
-                            <div class="card mx-2">
-                                <img src="assets/banner-3-2.jpg" class="card-img-top" alt="Card 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card 2</h5>
-                                    <p class="card-text">Some quick example text for Card 2.</p>
-                                    <a href="#" class="read-more-btn">Read more</a>
-                                </div>
-                            </div>
-                            <div class="card mx-2">
-                                <img src="assets/banner-3-2.jpg" class="card-img-top" alt="Card 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card 3</h5>
-                                    <p class="card-text">Some quick example text for Card 3.</p>
-                                    <a href="#" class="read-more-btn">Read more</a>
-                                </div>
-                            </div>
-                            <div class="card mx-2">
-                                <img src="assets/banner-3-2.jpg" class="card-img-top" alt="Card 4">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card 4</h5>
-                                    <p class="card-text">Some quick example text for Card 4.</p>
-                                    <a href="#" class="read-more-btn">Read more</a>
-                                </div>
-                            </div>
-                            <div class="card mx-2">
-                                <img src="assets/banner-3-2.jpg" class="card-img-top" alt="Card 5">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card 5</h5>
-                                    <p class="card-text">Some quick example text for Card 5.</p>
-                                    <a href="/Tiara-demo/about.html" class="read-more-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+	<!--==================================================-->
+	<!-- Start Main Menu Area -->
+	<!--==================================================-->
+	<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+		<div class="mobile-menu">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-2 d-flex align-items-center justify-content-center logo">
+						<a href="index.html">
+							<img class="w-50" src="assets/logo.webp" alt="logo">
+						</a>
+					</div>
+					<div class="col-1 mobile-menu d-flex align-items-center justify-content-center">
+						<span onclick="toggleNav()" class="fs-4">
+							☰
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="main-mobile-menu" id="mobileMenu">
+				<ul class="list-unstyled mb-0">
+					<li><a href="index.html"
+							class="d-block py-2 px-3 text-decoration-none text-dark border-top">Home</a></li>
+					<li><a href="about.html"
+							class="d-block py-2 px-3 text-decoration-none text-dark border-top">About</a></li>
+					<li><a href="blog-details.html"
+							class="d-block py-2 px-3 text-decoration-none text-dark border-top">Blog</a></li>
+					<li><a href="contact.html"
+							class="d-block py-2 px-3 text-decoration-none text-dark border-top">Contact</a></li>
+					<li><a href="more.html" class="d-block py-2 px-3 text-decoration-none text-dark border-top">More</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--==================================================-->
+	<!-- End Main Menu Area -->
+	<!--==================================================-->
 
-                    <h3 class="mb-4 mt-5">Upcoming Events</h3>
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="event-card">
-                                <a href="#" class="text-decoration-none">
-                                    <h5><i class="bi bi-calendar-event"></i> Miss Universe India 2025 Pageant Coaching &
-                                        Grooming</h5>
-                                    <!-- <p>Various dates from January to May 2024</p> -->
-                                    <p>The Tiara Pageant Training Studio: Your Path to Success for Miss Universe India
-                                        2025.</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="event-card">
-                                <a href="#" class="text-decoration-none">
-                                    <h5><i class="bi bi-calendar-event"></i>
-                                        Miss India 2025 Pageant Grooming</h5>
-                                    <!-- <p>June 1, 2024 - Paris, France</p> -->
-                                    <p>Miss India 2025 Pageant Grooming: The Tiara Pageant Coaching Experience.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-5">
-                        <h3 class="mb-4">Join Us in Celebrating Beauty and Empowerment</h3>
-                        <a href="#">
-                            <button class="button-1 w-auto">
-                                <span>Learn More About Participation</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- contact-us -->
-    <section id="contact-us">
-        <div class="row">
-            <div class="col-lg-6" id="contact-left">
-                <div id="inner-left">
-                    <h1>
-                        Start your journey to the crown. Book your training slot today.
-                    </h1>
-                    <div id="contact-information">
-                        <p>
-                            Call or WhatsApp: <a class="text-decoration-none text-white" href="tel:+91 9876543210">+91
-                                98231 56193 </a>
-                        </p>
-                        <p>
-                            Or fill the form here. We'll get in touch.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column" id="contact-right">
-                <h2 class="mb-4 display-2" id="contact-title">Contact Us</h2>
-                <form id="contactForm">
-                    <div class="mb-3 d-flex name">
-                        <div>
-                            <label for="first-name">First Name</label>
-                            <input type="text" class="form-control form-control-lg" id="first-name"
-                                placeholder="Your Name" required>
-                        </div>
-                        <div>
-                            <label for="last-name">Last Name</label>
-                            <input type="text" class="form-control form-control-lg" id="last-name"
-                                placeholder="Your Last Name" required>
-                        </div>
-                    </div>
-                    <!-- <div class="mb-3">
-                        
-                    </div> -->
-                    <div class="mb-3">
-                        <label for="phone">Phone</label>
-                        <input type="phone" class="form-control form-control-lg" id="email" placeholder="Your Email"
-                            required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control form-control-lg" id="email" placeholder="Your Email"
-                            required>
-                    </div>
-                    <button type="submit" class="btn btn-submit btn-lg w-100">
-                        <i class="bi bi-send me-2"></i> Send
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
+	<!-- hero-section -->
+	<section class="hero">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">
+				<div class="item-content">
+					<h1>
+						The Tiara
+					</h1>
+					<p>
+						Pageant And Model Traning Studio
+					</p>
+				</div>
+				<div class="item-banner">
+					<!-- <img src="assets/about-big-1.jpg" alt=""> -->
+					<video autoplay muted loop id="myVideo">
+						<source src="assets/bg.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div class="item-content">
+					<h1>
+						The Tiara
+					</h1>
+					<p>
+						Pageant And Model Traning Studio
+					</p>
+				</div>
+				<div class="item-banner">
+					<img src="assets/1-1.jpg" alt="">
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div class="item-content">
+					<h1>
+						The Tiara
+					</h1>
+					<p>
+						Pageant And Model Traning Studio
+					</p>
+				</div>
+				<div class="item-banner">
+					<img src="assets/1-2.jpg" alt="">
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		  </div>
+	</section>
+	<!-- hero-section-end -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const submenuToggles = document.querySelectorAll('.submenu-toggle');
+	<!-- pageant-section -->
+	<section class="pricing-area">
+		<!-- <div class="crown">
+        <img src="assets/crown.webp" alt="">
+    </div> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-title">
+						<h4>Own the Pageant Stage</h4>
+						<h1>Learn to command the stage with beauty, grace and confidence.</h1>
+						<h1>Get exclusive training from India's 1st pageant training coach, Ritika Ramtri.</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-pricing-img-box">
+						<div class="pricing-img-content">
+							<h4>Save More</h4>
+							<h1>With Good Plans</h1>
+							<p>Globally morph an expanded array
+								envisioneer performance</p>
+							<a href="pricing.html"><i class="bi bi-arrow-right"></i></a>
+						</div>
+						<div class="pricing-img-shape">
+							<img src="assets/banner-5-png.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-pricing-box">
+						<div class="pricing-head">
+							<div class="pricing-icon">
+								<img src="assets/images/home-1/pricing-box-shape.png" alt="">
+							</div>
+							<h4>Basic Plans</h4>
+							<h1>$30<span>/ Per Day</span></h1>
+						</div>
+						<div class="pricing-body">
+							<ul>
+								<li><i class="bi bi-check-lg"></i>Serenity Swedish Massage</li>
+								<li><i class="bi bi-check-lg"></i>Purity Detox Facial</li>
+								<li><i class="bi bi-check-lg"></i>Luminous Anti-Aging Facial</li>
+								<li><i class="bi bi-check-lg"></i>Deep Harmony Massage</li>
+							</ul>
+						</div>
+						<div class="project-button">
+							<a href="pricing.html">Purchaces Now<i class="bi bi-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-pricing-box">
+						<div class="pricing-head">
+							<div class="pricing-icon">
+								<img src="assets/images/home-1/pricing-box-shape.png" alt="">
+							</div>
+							<h4>Premium Plans</h4>
+							<h1>$50<span>/ Per Day</span></h1>
+						</div>
+						<div class="pricing-body">
+							<ul>
+								<li><i class="bi bi-check-lg"></i>Serenity Swedish Massage</li>
+								<li><i class="bi bi-check-lg"></i>Purity Detox Facial</li>
+								<li><i class="bi bi-check-lg"></i>Luminous Anti-Aging Facial</li>
+								<li><i class="bi bi-check-lg"></i>Deep Harmony Massage</li>
+							</ul>
+						</div>
+						<div class="project-button">
+							<a href="pricing.html">Purchaces Now<i class="bi bi-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-shape">
+				<img src="assets/images/home-1/pricing-shape.png" alt="">
+			</div>
+			<div class="pricing-shape-2">
+				<img src="assets/images/home-1/about-shape.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- pageant-section-end -->
 
-            submenuToggles.forEach(toggle => {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const submenu = this.nextElementSibling;
-                    submenu.classList.toggle('show');
-                    this.classList.toggle('active');
-                });
-            });
-        });
-        $(document).ready(function () {
-            $('.card-carousel').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                dots: true,
-                responsive: [
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
-    <script src="/script.js"></script>
+	<!--==================================================-->
+	<!-- Start About Area -->
+	<!--==================================================-->
+	<div class="about-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 col-md-12">
+					<div class="about-thumb">
+						<img class="img-fluid" src="assets/coach-1.webp" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="about-title">
+						<h4>About Us</h4>
+						<h1>Pursuit of Perfect Relaxation</h1>
+						<h1>Crafting Oasis Calm</h1>
+						<p>Founded in 1997, The Tiara Pageant and Model Training Studio in Pune, is your leading
+							training center for reputed beauty pageants. Our expertise lies in training for Miss India
+							and all other national and international pageants. Our pageant grooming techniques will help
+							ace your ramp walk, master your pageant interview and become photoshoot ready. Contact us
+							today to start your journey towards the crown.</p>
+					</div>
+					<div class="about-right">
+						<div class="single-about-box">
+							<div class="about-box-icon">
+								<img src="assets/model.png" alt="">
+							</div>
+							<div class="about-content">
+								<h4>Premium & Modern Harbal Product</h4>
+							</div>
+						</div>
+						<div class="single-about-box">
+							<div class="about-box-icon">
+								<img src="assets/crown.png" alt="">
+							</div>
+							<div class="about-content">
+								<h4>High Qualified Staff SPA Services</h4>
+							</div>
+						</div>
+					</div>
+					<div class="about-item">
+						<p><i class="bi bi-patch-check"></i>High Quality Service Provide Gaurantee</p>
+					</div>
+					<div class="project-button">
+						<a href="about.html">More About Us<i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="about-shape">
+				<img src="assets/images/home-1/about-shape.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!--==================================================-->
+	<!-- End About Area -->
+	<!--==================================================-->
+
+	<!--==================================================-->
+	<!-- Start Media Area -->
+	<!--==================================================-->
+
+	<section class="media-area container">
+		<div class="row align-items-center">
+			<div class="media-area-title">
+				<h4>Media Gallery</h4>
+				<h1>The Tiara Winners</h1>
+			</div>
+		</div>
+		<div class="swiper myMediaSwiper">
+			
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">
+				<div class="outer-media">
+					<div class="row media-heading justify-content-between align-items-center">
+						<div class="col-lg-10 d-flex col-md-12">
+							<div class="media-title">
+								<h1>The Tiara Winners at Femina Miss India</h1>
+							</div>
+						</div>
+						<div class="col-lg-2 d-flex justify-content-end col-md-12">
+							<div class="project-button">
+								<a href="blog-grid.html">More<i class="bi bi-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="media-gallary">
+						<div class="grid-container">
+							<div class="box big-box">
+								<img src="assets//grid/1.png" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/2.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/3.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/4.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/banner-4.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div class="outer-media">
+					<div class="row media-heading justify-content-between align-items-center">
+						<div class="col-lg-10 d-flex col-md-12">
+							<div class="media-title">
+								<h1>The Tiara Winners at Miss Teen Diva</h1>
+							</div>
+						</div>
+						<div class="col-lg-2 d-flex justify-content-end col-md-12">
+							<div class="project-button">
+								<a href="blog-grid.html">More<i class="bi bi-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="media-gallary">
+						<div class="grid-container">
+							<div class="box big-box">
+								<img src="assets//grid/1.png" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/2.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/3.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/4.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/5.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div class="outer-media">
+					<div class="row media-heading justify-content-between align-items-center">
+						<div class="col-lg-10 d-flex col-md-12">
+							<div class="media-title">
+								<h1>The Tiara Winners at Glamanand Supermodel India</h1>
+							</div>
+						</div>
+						<div class="col-lg-2 d-flex justify-content-end col-md-12">
+							<div class="project-button">
+								<a href="blog-grid.html">More<i class="bi bi-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="media-gallary">
+						<div class="grid-container">
+							<div class="box big-box">
+								<img src="assets//grid/6.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/2.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/3.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/4.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/banner-4.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div class="outer-media">
+					<div class="row media-heading justify-content-between align-items-center">
+						<div class="col-lg-10 d-flex col-md-12">
+							<div class="media-title">
+								<h1>The Tiara Winners at Divine Beauty</h1>
+							</div>
+						</div>
+						<div class="col-lg-2 d-flex justify-content-end col-md-12">
+							<div class="project-button">
+								<a href="blog-grid.html">More<i class="bi bi-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="media-gallary">
+						<div class="grid-container">
+							<div class="box big-box">
+								<img src="assets//grid/1.png" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/2.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/3.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/4.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/5.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div class="outer-media">
+					<div class="row media-heading justify-content-between align-items-center">
+						<div class="col-lg-10 d-flex col-md-12">
+							<div class="media-title">
+								<h1>The Tiara Winners at Femina Miss India</h1>
+							</div>
+						</div>
+						<div class="col-lg-2 d-flex justify-content-end col-md-12">
+							<div class="project-button">
+								<a href="blog-grid.html">More<i class="bi bi-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="media-gallary">
+						<div class="grid-container">
+							<div class="box big-box">
+								<img src="assets//grid/1.png" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/2.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/3.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/grid/4.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+							<div class="box small-box">
+								<img src="assets/banner-4.jpg" alt="">
+								<div class="image-content">
+									Femina Miss India Intercontinental 2017 - Priyanka Kumari
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-pagination"></div>
+		  </div>
+	 </section>
+
+	<!--==================================================-->
+	<!-- End About Area -->
+	<!--==================================================-->
+
+	<!--==================================================-->
+	<!-- Start Blog Area -->
+	<!--==================================================-->
+	<div class="service-area blog-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-8 col-md-12">
+					<div class="section-title blog-section-title">
+						<h4>Latest Blog</h4>
+						<h1>Read our Latest Blog Posts</h1>
+						<h1>from Recent Insights</h1>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="project-button">
+						<a href="blog-grid.html">View all Blog<i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="service-list-1 owl-carousel">
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest Trends What’s Hot in the World</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest Trends What’s Hot in the World</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest Trends What’s Hot in the World</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest Trends What’s Hot in the World</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest Trends What’s Hot in the World</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest Trends What’s Hot in the World</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest Trends What’s Hot in the World</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="single-blog-box">
+							<div class="blog-thumb">
+								<img src="assets/banner-4.jpg" alt="">
+							</div>
+							<div class="blog-date">
+								<h6>25</h6>
+								<p>AUG</p>
+							</div>
+							<div class="blog-author-box">
+								<div class="blog-author">
+									<div class="blog-author-thumb">
+										<img src="assets/logo.webp" alt="">
+									</div>
+									<div class="blog-author-title">
+										<h4><Strong>By - </Strong>The Tiara</h4>
+									</div>
+								</div>
+								<div class="blog-link-button">
+									<a href="blog-grid.html"><i class="fa-solid fa-arrow-right"></i></a>
+								</div>
+							</div>
+							<div class="blog-content">
+								<a href="blog-details.html">Exploring the Latest Trends What’s Hot in the World</a>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-lg-12">
+					<div class="single-service-box">
+					    <div class="service-thumb">
+					    	<img src="assets/demo2.png" alt="">
+					    </div>
+					    <div class="service-content">
+					    	<a href="service.html"><i class="bi bi-arrow-right"></i></a>
+					    	<h4>Revitalize Facial</h4>
+					    	<p>Credibly parallel task sustainable catalysts for
+	                        change before wireless products</p>
+					    </div>
+					    <div class="service-time">
+					    	<h6>Duration : 30 Mins</h6>
+					    </div>
+					    <div class="service-shape">
+					    	<img src="assets/images/home-1/service-shape.png" alt="">
+					    </div>
+					</div>
+				</div>			
+				<div class="col-lg-12">
+					<div class="single-service-box">
+					    <div class="service-thumb">
+					    	<img src="assets/demo2.png" alt="">
+					    </div>
+					    <div class="service-content">
+					    	<a href="service.html"><i class="bi bi-arrow-right"></i></a>
+					    	<h4>Skin Protection</h4>
+					    	<p>Credibly parallel task sustainable catalysts for
+	                        change before wireless products</p>
+					    </div>
+					    <div class="service-time">
+					    	<h6>Duration : 30 Mins</h6>
+					    </div>
+					    <div class="service-shape">
+					    	<img src="assets/images/home-1/service-shape.png" alt="">
+					    </div>
+					</div>
+				</div>				
+				<div class="col-lg-12">
+					<div class="single-service-box">
+					    <div class="service-thumb">
+					    	<img src="assets/demo2.png" alt="">
+					    </div>
+					    <div class="service-content">
+					    	<a href="service.html"><i class="bi bi-arrow-right"></i></a>
+					    	<h4>Body Massage</h4>
+					    	<p>Credibly parallel task sustainable catalysts for
+	                        change before wireless products</p>
+					    </div>
+					    <div class="service-time">
+					    	<h6>Duration : 30 Mins</h6>
+					    </div>
+					    <div class="service-shape">
+					    	<img src="assets/images/home-1/service-shape.png" alt="">
+					    </div>
+					</div>
+				</div>			
+				<div class="col-lg-12">
+					<div class="single-service-box">
+					    <div class="service-thumb">
+					    	<img src="assets/demo2.png" alt="">
+					    </div>
+					    <div class="service-content">
+					    	<a href="service.html"><i class="bi bi-arrow-right"></i></a>
+					    	<h4>Revitalize Facial</h4>
+					    	<p>Credibly parallel task sustainable catalysts for
+	                        change before wireless products</p>
+					    </div>
+					    <div class="service-time">
+					    	<h6>Duration : 30 Mins</h6>
+					    </div>
+					    <div class="service-shape">
+					    	<img src="assets/images/home-1/service-shape.png" alt="">
+					    </div>
+					</div>
+				</div>			
+				<div class="col-lg-12">
+					<div class="single-service-box">
+					    <div class="service-thumb">
+					    	<img src="assets/demo2.png" alt="">
+					    </div>
+					    <div class="service-content">
+					    	<a href="service.html"><i class="bi bi-arrow-right"></i></a>
+					    	<h4>Skin Protection</h4>
+					    	<p>Credibly parallel task sustainable catalysts for
+	                        change before wireless products</p>
+					    </div>
+					    <div class="service-time">
+					    	<h6>Duration : 30 Mins</h6>
+					    </div>
+					    <div class="service-shape">
+					    	<img src="assets/images/home-1/service-shape.png" alt="">
+					    </div>
+					</div>
+				</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--==================================================-->
+	<!-- End Service Area -->
+	<!--==================================================-->
+
+	<!--==================================================-->
+	<!-- Start Footar Area -->
+	<!--==================================================-->
+	<div class="footar-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-logo">
+						<a href="index.html"><img src="assets/logo.webp" alt=""></a>
+					</div>
+					<p class="footer-desc">
+						Dramatically exploit premium procedures before emerging to cultivate
+					</p>
+
+				</div>
+				<div class="col-lg-2 col-md-6">
+					<div class="footar-content">
+						<div class="footar-title">
+							<h4>Company</h4>
+						</div>
+						<div class="footar-list-item">
+							<ul>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="service.html">Our Services</a></li>
+								<li><a href="team.html">Meet the Team</a></li>
+								<li><a href="portfolio.html">Our Works</a></li>
+								<li><a href="portfolio-details.html">Lates Blog</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footar-content">
+						<div class="footar-title">
+							<h4>Services</h4>
+						</div>
+						<div class="footar-list-item">
+							<ul>
+								<li><a href="#">Random Text</a></li>
+								<li><a href="#">Random Text</a></li>
+								<li><a href="#">Random Text</a></li>
+								<li><a href="#">Random Text</a></li>
+								<li><a href="#">Random Text</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footar-contact">
+						<p><img src="assets/call-icon.png" alt="">+123 (4567) 890</p>
+					</div>
+					<div class="footar-social-icon">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row add-bg align-items-center">
+				<div class="col-lg-6 col-md-6">
+					<div class="footer-bottom-content">
+						<p>© Copyright 2024 spaclub All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="footer-bottom-content">
+						<ul>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-shape-one">
+				<img src="assets/images/home-1/footer-shape1.png" alt="">
+			</div>
+			<div class="footer-shape-two">
+				<img src="assets/images/home-1/footer-shape2.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!--==================================================-->
+	<!-- End Footar Area -->
+	<!--==================================================-->
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+			submenuToggles.forEach(toggle => {
+				toggle.addEventListener('click', function (e) {
+					e.preventDefault();
+					const submenu = this.nextElementSibling;
+					submenu.classList.toggle('show');
+					this.classList.toggle('active');
+				});
+			});
+		});
+		// $(document).ready(function () {
+		// 	$('.card-carousel').slick({
+		// 		slidesToShow: 3,
+		// 		slidesToScroll: 1,
+		// 		autoplay: true,
+		// 		autoplaySpeed: 2000,
+		// 		dots: true,
+		// 		responsive: [
+		// 			{
+		// 				breakpoint: 992,
+		// 				settings: {
+		// 					slidesToShow: 2
+		// 				}
+		// 			},
+		// 			{
+		// 				breakpoint: 576,
+		// 				settings: {
+		// 					slidesToShow: 1
+		// 				}
+		// 			}
+		// 		]
+		// 	});
+		// });
+		$(document).ready(function () {
+			$('.service-list-1').owlCarousel({
+				loop: true,
+				autoplay: true,
+				// autoplayTimeout: 10000,
+				dots: false,
+				nav: true,
+				navText: ["<i class='bi bi-arrow-left''></i>", "<i class='bi bi-arrow-right''></i>"],
+				responsive: {
+					0: {
+						items: 1
+					},
+					480: {
+						items: 1
+					},
+					600: {
+						items: 1
+					},
+					768: {
+						items: 2
+					},
+					992: {
+						items: 2
+					},
+					1200: {
+						items: 3
+					},
+					1920: {
+						items: 3
+					}
+				}
+			})
+		});
+
+		var swiper = new Swiper(".mySwiper", {
+      		slidesPerView: 1,
+      		spaceBetween: 0,
+      		speed: 1000,
+			autoplay: true,
+      		loop: true,
+      		pagination: {
+      		  el: ".swiper-pagination",
+      		  clickable: true,
+      		},
+      		navigation: {
+      		  nextEl: ".swiper-button-next",
+      		  prevEl: ".swiper-button-prev",
+      		},
+    	});
+
+		var swiper = new Swiper(".myMediaSwiper", {
+      		slidesPerView: 1,
+      		spaceBetween: 0,
+      		speed: 300,
+			// autoplay: true,
+			effect: 'fade',
+			
+      		loop: true,
+			pagination: {
+      		  el: ".swiper-pagination",
+      		  clickable: true,
+			  
+      		  renderBullet: function (index, className) {
+                // Array of custom names for the bullets
+                const bulletNames = ['The Tiara Winners at Femina Miss India', 'The Tiara Winners at Miss Diva', 'The Tiara Winners at Miss Teen Diva', 'The Tiara Winners at Glamanand Supermodel India', 'The Tiara Winners at Divine Beauty'];
+                
+                // Use the custom name based on the index
+                return '<span class="' + className + '">' + bulletNames[index] + '</span>';
+            }
+      		},
+    	});
+	</script>
+	<script src="/script.js"></script>
 
 </body>
 
