@@ -272,7 +272,7 @@ a:hover {
 .sticky {
     left: 0;
     margin: auto;
-    position: fixed !important;
+    position: relative !important;
     top: 0;
     width: 100%;
     -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
@@ -439,7 +439,6 @@ a:hover {
     font-size: 40px;
     letter-spacing: 10px;
     font-family: "Carattere", cursive;
-    
     color: white;
 }
 
@@ -481,6 +480,26 @@ a:hover {
     top: 10%;
     width: 200px;
     animation: dance 2s alternate infinite
+}
+
+@media screen and (max-width: 575px) {
+    .item-content p {
+        font-size: 26px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+
+    .item-content h1 {
+        font-size: 80px;
+    }
+    
+    .item-content p {
+        font-size: 38px;
+    }
 }
 
 @keyframes dance {
@@ -723,6 +742,22 @@ a:hover {
     .about-title {
         margin-top: 3rem;
     }
+
+    .media-title {
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 574px) {
+    .section-title h1 {
+        font-size: 20px;
+        line-height: 14px;
+    }
+    .about-title h1 {
+        font-size: 20px;
+        line-height: 14px;
+    }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -737,9 +772,10 @@ a:hover {
     }
 
     .about-title h1 {
-        font-size: 32px !important;
-        line-height: 32px !important;
+        font-size: 28px !important;
+        line-height: 30px !important;
     }
+    
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -752,6 +788,11 @@ a:hover {
         font-size: 14px;
         line-height: 14px;
     }
+    
+    .about-title h1 {
+        font-size: 38px !important;
+        line-height: 40px !important;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -759,6 +800,8 @@ a:hover {
         font-size: 25px;
         line-height: 26px;
     }
+    
+
     .pricing-area .section-title h1 {
         font-size: 16px;
         line-height: 17px;
@@ -1040,10 +1083,12 @@ a:hover {
     margin-bottom: 30px;
 }
 
+
 .media-title h1 {
     font-size: 30px;
     /* line-height: 42px; */
     color: black;
+    text-align: left;
     font-weight: 500;
 }
 
@@ -1174,7 +1219,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 119px 0 117px;
-    margin: 0 63px 0;
+    /* margin: 0 63px 0; */
 }
 
 .single-service-box {
@@ -1297,16 +1342,39 @@ a:hover {
     color: #222;
 }
 
-.blog-area .section-title {
+.blog-section-title h4 {
+    font-size: 40px;
+    font-weight: 400;
+    /* color: #FB68FF; */
+    color: var(--primary-color);
+    font-family: 'Carattere', cursive;;
+    margin: 0 0 14px 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.blog-section-title h4:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 1px;
+    left: -48px;
+    top: 22px;
+    background: var(--primary-color);
+}
+
+.blog-area .blog-section-title {
     margin-bottom: 63px;
 }
 
-.section-title.blog-section-title h1 {
+.blog-section-title h1 {
     font-size: 42px;
     line-height: 42px;
     color: #0a132e;
     font-weight: 500;
 }
+
+
 
 /* .single-blog-box {
     position: relative;
@@ -1451,16 +1519,125 @@ a:hover {
     transition: 0.5s;
 }
 
+.blog-content a:hover {
+    color: var(--primary-color);
+}
 /* custom-blog-content end */
 
 .blog-area .project-button {
     text-align: right;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 574px) {
+    .blog-section-title h1 {
+        font-size: 20px;
+        line-height: 14px;
+    }
+    
+    .media-area-title h1  {
+        font-size: 24px;
+       
+        line-height: 14px;
+    }
+
+    .media-title h1  {
+        font-size: 16px;
+        line-height: 13px;
+    }
+
+    .blog-area .project-button {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .media-area .project-button {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .blog-section-title h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .media-title h1  {
+        font-size: 16px;
+        line-height: 13px;
+    }
+
+    .media-area-title h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .blog-area .project-button {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .media-area .project-button {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-section-title h1 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .media-title h1  {
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+    .media-area-title h1 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .blog-area .project-button {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .media-area .project-button {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog-content a {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .media-title h1  {
+        font-size: 25px !important;
+        line-height: 26px !important;
+    }
+
+    .blog-section-title h1 {
+        font-size: 25px !important;
+        line-height: 26px !important;
+    }
+}
+
 @media (min-width: 1200px) and (max-width: 1399px) {
     .blog-section-title h1 {
         font-size: 33px;
         line-height: 30px;
+    }
+
+    .blog-content a {
+        font-size: 17px;
+        line-height: 27px;
     }
 }
 
