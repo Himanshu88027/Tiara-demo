@@ -123,7 +123,7 @@ a:hover {
     background: #fff;
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     top: 150%;
     z-index: 2;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
@@ -139,7 +139,8 @@ a:hover {
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 600;
-    transition: 0.5s;
+    transition: 0.3s;
+    visibility: hidden;
     position: relative;
     z-index: 1;
 }
@@ -202,6 +203,30 @@ a:hover {
     visibility: visible;
 }
 
+.header-menu ul li:hover .sub-menu a {
+    visibility: visible;
+}
+
+.header-menu ul li .sub-menu li a:hover {
+    color: #fff;
+}
+
+.header-menu ul li .sub-menu li a:hover:before {
+    height: 100%;
+    top: 0;
+}
+.header-menu ul li .sub-menu li a:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--primary-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
 /* @media only screen and (min-width: 320px) and (max-width: 574px) {
     .header-area {
         display: none;
@@ -262,6 +287,10 @@ a:hover {
 
 .inner-style.sticky .header-menu ul li a {
     color: black !important;
+}
+
+.inner-style.sticky .header-menu ul li .sub-menu li a:hover {
+    color: #fff !important;
 }
 
 @keyframes slideInDown {
@@ -725,6 +754,17 @@ a:hover {
     }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section-title h1 {
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .pricing-area .section-title h1 {
+        font-size: 16px;
+        line-height: 17px;
+    }
+}
+
 @media (min-width: 1200px) and (max-width: 1399px) {
     .section-title h1 {
         font-size: 16px;
@@ -736,7 +776,7 @@ a:hover {
 /* about-section */
 
 .about-area {
-    padding: 80px 0 121px;
+    padding: 10px 0 121px;
     position: relative;
     min-height: 100vh;
 }
