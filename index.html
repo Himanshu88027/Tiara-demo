@@ -84,37 +84,34 @@
 	<!-- Start Main Menu Area -->
 	<!--==================================================-->
 	<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
-		<div class="mobile-menu">
-			<div class="container">
-				<div class="row justify-content-between align-items-center">
-					<div class="col-2 d-flex align-items-center justify-content-center logo">
-						<a href="index.html">
-							<img class="w-50" src="assets/logo.webp" alt="logo">
-						</a>
-					</div>
-					<div class="col-1 mobile-menu d-flex align-items-center justify-content-center">
-						<span onclick="toggleNav()" class="fs-4">
-							☰
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="main-mobile-menu" id="mobileMenu">
-				<ul class="list-unstyled mb-0">
-					<li><a href="index.html"
-							class="d-block py-2 px-3 text-decoration-none text-dark border-top">Home</a></li>
-					<li><a href="about.html"
-							class="d-block py-2 px-3 text-decoration-none text-dark border-top">About</a></li>
-					<li><a href="blog-details.html"
-							class="d-block py-2 px-3 text-decoration-none text-dark border-top">Blog</a></li>
-					<li><a href="contact.html"
-							class="d-block py-2 px-3 text-decoration-none text-dark border-top">Contact</a></li>
-					<li><a href="more.html" class="d-block py-2 px-3 text-decoration-none text-dark border-top">More</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <div class="mobile-menu">
+            <div class="container">
+                <div class="row justify-content-between align-items-center py-2">
+                    <div class="col-6 d-flex align-items-center justify-content-start logo">
+                        <a href="index.html">
+                            <img class="w-50" src="assets/logo.webp" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <div class="hamburger-icon" onclick="toggleNav()">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-mobile-menu" id="mobileMenu">
+                <ul class="list-unstyled mb-0">
+                    <li><a href="index.html" class="d-block py-2 px-3 text-decoration-none text-dark border-top">Home</a></li>
+                    <li><a href="about.html" class="d-block py-2 px-3 text-decoration-none text-dark border-top">About</a></li>
+                    <li><a href="blog-details.html" class="d-block py-2 px-3 text-decoration-none text-dark border-top">Blog</a></li>
+                    <li><a href="contact.html" class="d-block py-2 px-3 text-decoration-none text-dark border-top">Contact</a></li>
+                    <li><a href="more.html" class="d-block py-2 px-3 text-decoration-none text-dark border-top">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 	<!--==================================================-->
 	<!-- End Main Menu Area -->
 	<!--==================================================-->
@@ -1068,6 +1065,14 @@
 		// 		]
 		// 	});
 		// });
+
+		function toggleNav() {
+		    const mobileMenu = document.getElementById('mobileMenu');
+		    const hamburgerIcon = document.querySelector('.hamburger-icon');
+		    mobileMenu.classList.toggle('active');
+		    hamburgerIcon.classList.toggle('open');
+		}
+
 		$(document).ready(function () {
 			$('.service-list-1').owlCarousel({
 				loop: true,

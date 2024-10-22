@@ -11,11 +11,18 @@ wind.on('scroll', function () {
 });
 
 // open nav
+// function toggleNav() {
+//     var menu = document.getElementById("mobileMenu");
+//     menu.classList.toggle("show");
+//     var menuIcon = document.querySelector(".mobile-menu span");
+//     menuIcon.textContent = menuIcon.textContent === "☰" ? "×" : "☰";
+// }
+
 function toggleNav() {
-    var menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("show");
-    var menuIcon = document.querySelector(".mobile-menu span");
-    menuIcon.textContent = menuIcon.textContent === "☰" ? "×" : "☰";
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    mobileMenu.classList.toggle('active');
+    hamburgerIcon.classList.toggle('open');
 }
 
 (function ($) {
