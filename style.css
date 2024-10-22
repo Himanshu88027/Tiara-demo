@@ -272,7 +272,7 @@ a:hover {
 .sticky {
     left: 0;
     margin: auto;
-    position: relative !important;
+    position: fixed !important;
     top: 0;
     width: 100%;
     -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
@@ -283,6 +283,12 @@ a:hover {
     -webkit-animation: 300ms running fadeInDown;
     animation: 500ms running fadeInUp;
     animation-name: slideInDown;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .sticky {
+        position: absolute !important;
+    }
 }
 
 .inner-style.sticky .header-menu ul li a {
@@ -333,7 +339,7 @@ a:hover {
     background: #000;
     border-radius: 9px;
     opacity: 1;
-    left: 0;
+    right: 0;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
 }
@@ -357,7 +363,7 @@ a:hover {
 
 .hamburger-icon.open .line:nth-child(2) {
     opacity: 0;
-    left: -60px;
+    right: -60px;
 }
 
 .hamburger-icon.open .line:nth-child(3) {
@@ -1905,4 +1911,234 @@ p.footer-desc {
 .pageant-button a:hover:before {
     width: 100%;
     left: 0;
+}
+
+/* contact-page-start-here */
+
+.breadcumb-area {
+    background: url('assets/about-big-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 276px 0 183px;
+}
+
+.breadcumb-content {
+    text-align: center;
+}
+
+.breadcumb-content h4 {
+    font-size: 50px;
+    color: #ffff;
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+    font-weight: 500;
+}
+
+.breadcumb-content ul li {
+    display: inline-block;
+    color: #ffff;
+    font-family: var(--body-fonts);
+    text-transform: uppercase;
+}
+
+.breadcumb-content ul li a {
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+.breadcumb-content ul li {
+    display: inline-block;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.inner-style.contact-area {
+    padding: 120px 0 120px;
+}
+
+.inner-style .row.add-backgroun {
+    background-color: #f8f6f3;
+    padding: 98px 67px 101px;
+}
+
+.inner-style.contact-area .section-title {
+    margin-bottom: 41px;
+}
+
+.inner-style .single-contact-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 41px;
+    position: relative;
+}
+
+.inner-style .single-contact-box:before {
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 1px;
+    left: 5px;
+    bottom: -19px;
+    background: #6161612b;
+}
+
+.inner-style .contact-icon i {
+    background: #ffff;
+    color: var(--primary-color);
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.inner-style .contact-title h4 {
+    font-size: 15px;
+    line-height: 26px;
+    color: #616161;
+    font-weight: 400;
+    font-family: var(--body-fonts);
+}
+
+.inner-style .contact-title p {
+    font-size: 22px;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-family: var(--title-fonts);
+    line-height: 32px;
+}
+
+.inner-style .single-contact-form {
+    background-color: #272727;
+    padding: 42px 53px 60px;
+    text-align: center;
+}
+
+.inner-style.contact-area .section-title p {
+    margin: 0;
+    margin-top: 21px;
+    width: 90%;
+}
+
+.inner-style .contact-content h4 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.inner-style .single-input-box input {
+    background: transparent !important;
+    border: 1px solid #acacac4f;
+    color: #ffff;
+    outline: 0;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-bottom: 11px;
+    padding: 0 21px;
+}
+
+.inner-style .single-input-box button {
+    background: var(--primary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: var(--title-fonts);
+    width: 100%;
+    border: transparent;
+    padding: 16px 0;
+    margin-top: 13px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.inner-style .single-input-box button:hover {
+    color: var(--primary-color);
+}
+
+.inner-style .single-input-box button:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+.inner-style .single-input-box button:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.inner-style .single-input-box textarea {
+    background: transparent !important;
+    border: 1px solid #acacac4f;
+    color: #acacac;
+    outline: 0;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    padding: 9px 19px;
+    margin-top: 17px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 574px) {
+    .breadcumb-content h4 {
+        font-size: 22px;
+    }
+
+    .inner-style .row.add-backgroun {
+        padding: 98px 10px 101px;
+    }
+
+    .inner-style .single-contact-box {
+        display: block;
+        text-align: center;
+    }
+
+    .inner-style .contact-title p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .inner-style .single-contact-form {
+        padding: 20px 16px 30px;
+    }
+
+    .inner-style.contact-area .section-title p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .inner-style .row.add-backgroun {
+        padding: 98px 10px 101px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .inner-style .row.add-backgroun {
+        padding: 98px 36px 101px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .inner-style .row.add-backgroun {
+        padding: 82px 18px 69px;
+    }
+
+    .inner-style .contact-title p {
+        font-size: 16px;
+    }
 }
